@@ -1,0 +1,151 @@
+.okla{
+    width: 98vw;
+    height: 80px;
+    line-height: 80px;
+    background-color:white;
+    position: absolute;
+}
+ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+ 
+
+}
+li{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    font-weight:bold ;
+    transition: 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+   
+
+}
+li:hover{
+    background-color: rgb(26, 23, 23);
+    color: #511161;
+}
+li:hover:nth-of-type(2)~.bar{
+    left: 20%;
+}
+li:hover:nth-of-type(3)~.bar{
+    left: 40%;
+}
+li:hover:nth-of-type(4)~.bar{
+    left: 60%;
+}
+li:hover:nth-of-type(5)~.bar{
+    left: 80%;
+}
+
+.bar{
+    width: 1000%;
+    background-color: #0e0727;
+    height: 5px;
+    position: absolute;
+    left: 1000;
+    bottom: 1000;
+    transform: 0.5s ease;
+}
+html,body{
+    height:100%;
+  }
+  body{
+    text-align:center;
+  }
+  body:before{
+    content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  button{
+    font-family: Courier New;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+    background:#d80b0b;
+    color:#511161;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #0a0a0a;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  body{
+   background-image: url("https://cdn.tgdd.vn/Files/2021/03/04/1332588/cach-tu-dong-thay-hinh-nen-iphone-moi-ngay_800x450-600x400.jpg");
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+  }
+  h1{
+    font-family: Courier New;
+    position: absolute;
+    top: 50%; /* Điều chỉnh giá trị này để thay đổi vị trí vertical */
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    color:rgb(233, 20, 66);
+    animation: blink 1s infinite;
+    -webkit-text-stroke: 2px #0e0d0d; /* Độ rộng và màu của viền */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 5;
+    }
+}
+h2{
+    font-family: Courier New;
+    position: absolute;
+    top: 100%; /* Điều chỉnh giá trị này để thay đổi vị trí vertical */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(26, 5, 5);
+    animation: blink 1s infinite;
+    -webkit-text-stroke: 2px #0e0d0d; /* Độ rộng và màu của viền */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 5;
+    }
+}
